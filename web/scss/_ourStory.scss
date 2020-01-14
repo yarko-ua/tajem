@@ -1,0 +1,46 @@
+.story {
+    background-color: #fff;
+    color: #413d4b;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-height: 405px;
+    width: 100%;
+}
+
+.story__logo {
+    width: 50%;
+    max-width: 235px;
+    max-height: 229px;
+    margin: 0 85px 0 5px;
+    margin-top: 70px;
+}
+
+.story__logo img {
+    width: 100%;
+}
+.story__textblock {
+    text-align: left;
+    margin: 60px 0;
+    padding: 10px
+}
+
+.story__textblock h2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: $font-play;
+    font-size: 22px;
+    font-weight: 700;
+    opacity: 0.9;
+}
+.story__textblock p {
+    width: 100%;
+    max-width: 545px;
+    min-height: 60px;
+    margin-bottom: 32px;
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.9;
+}

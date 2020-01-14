@@ -1,0 +1,78 @@
+$main-font: 'Roboto', sans-serif;
+$font-play: 'Playfair Display', serif;
+$font-hammer: 'Hammersmith One', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $main-font;
+    color: #fff;
+    text-align: center;
+    
+}
+
+hr {
+    border: 1px solid #c6c4c9;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.btn-main {
+    border: 1px solid #00e0d0;
+    color: #00e0d0;
+    background-color: transparent;
+    text-transform: uppercase;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: $font-hammer;
+    &--large {
+        width: 140px;
+    }
+}
+
+.btn-main:hover{
+    animation: btn 1s linear infinite;
+    animation-direction: alternate;;
+   
+}
+
+@keyframes btn {
+    0% {transform: skew(-4deg, -4deg);}
+    25% {transform: skew(0deg, 0deg);}
+    50% {transform: skew(4deg, 4deg);}
+    75% {transform: skew(0deg, 0deg);}
+    100% {transform: skew(-4deg, -4deg);}
+    
+}
+
+// _header.scss
+
+@import '_header';
+
+//_ourStory.scss
+@import '_ourStory';
+
+//_video.scss
+
+@import '_video';
+
+
+@import '_expertise';
+
+@import '_team';
+
+@import '_ourWorks';
+
+@import '_feedback';
+
+@import '_contact';
+
+@import '_footer';

@@ -1,0 +1,132 @@
+.header {
+    background: url(../img/header_overlay.png), 
+    url(../img/header_forest.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    min-height: 670px;
+    transition: 0.9s linear;
+    &:hover {
+        background: 
+    url(../img/header_forest.jpg) no-repeat center;
+    background-size: cover;
+    }
+
+    form {
+        margin-top: 125px;
+    }
+    
+    input[type='radio'] {
+        background-color: #00e0d0;
+        color: #00e0d0;
+        display: inline;
+    }
+    hr{
+        border: 1px solid #00e0d0; 
+    }
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.logo span {
+    font-weight: 300;
+    font-size: 30px;
+    color: #00e0d0;
+    margin-left: 10px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+.logo:hover svg {
+animation: logo 4s ease-in-out infinite;
+
+}
+
+@keyframes logo {
+    0% {transform: translate(0px, 0px) rotateZ(-20deg);}
+    25% {transform: translate(0px, -7px) rotateZ(20deg);}
+    50% {transform: translate(0px, 0px) rotateZ(-20deg);}
+    75% {transform: translate(0px, -7px) rotateZ(20deg);}
+    100% {transform: translate(0px, 0px) rotateZ(-20deg);}
+}
+
+ul {
+    margin-top: 20px;
+}
+
+li {
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    display: inline-flex;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+li a:hover {
+    color:  #00e0d0;
+    /* outline: 1px solid #f0f0f0; */
+    box-shadow: inset 3px 3px 10px #000;
+}
+.header__title{
+    font-family: $font-play;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px 0 25px;
+    padding-top: 180px;
+}
+
+
+
+.header__subtitle {
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    width: 100%;
+    max-width: 775px;
+    min-width: 300px;
+    min-height:65px ;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+@media screen and (max-width:980px){
+
+    nav {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+}
+
+

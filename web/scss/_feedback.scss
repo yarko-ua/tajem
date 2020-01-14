@@ -1,0 +1,86 @@
+.feedback {
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    background: url(../img/feedback_overlay.png), url(../img/feedback.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    transition: 0.9s linear;
+    &:hover {
+        background: url(../img/feedback.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    p{
+        max-width: 790px;
+        min-height: 100px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        font-family: $font-play;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        opacity: 0.85;
+        padding: 5px;
+    }
+}
+
+.quotes {
+    padding-top: 100px;
+    margin-bottom: 22px;
+    display: block;
+    font-family: $font-play;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 22px;
+        opacity: 0.9;
+
+}
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 65px;
+
+    img {
+        margin: 0 10px;
+    }
+}
+.avatar::before {
+    content: '<';
+    font-size: 58px;
+    margin-right: 20px;
+    opacity: 0.6;
+    font-family: $main-font;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.avatar::after {
+    content: '>';
+    font-size: 58px;
+    font-weight: 100;
+    margin-left: 20px;
+    opacity: 0.6;
+    font-family: $main-font;
+    cursor: pointer;
+}
+
+.feedback__name {
+    font-family: $main-font;
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.feedback__role {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: block;
+    font-family: $main-font;
+    font-weight: 100;
+    font-size: 13px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    
+}

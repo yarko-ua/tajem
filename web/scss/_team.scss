@@ -1,0 +1,82 @@
+.team {
+    background: url(../img/team_overlay.png), url(../img/for_team.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    min-height: 715px;
+    transition: 0.9s linear;
+    &:hover {
+    background: url(../img/for_team.jpg) no-repeat center;
+    background-size: cover;
+    }
+    h2 {
+    font-family: $font-play;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 70px 0 20px;
+    }
+
+    &__subtitle {
+    display: inline-block;
+    font-family: $font-play;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+        }
+    
+        p {
+            margin-bottom: 25px;
+        }
+}
+
+.team-profiles {
+width: 60%;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+align-items: center;
+margin: 45px auto 65px;
+
+}
+
+.cont {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 22%;
+
+}
+
+.photo {
+    width: 100%;
+    min-height: 230px;
+    display: flex;
+    img {
+        width: 100%;
+    }
+}
+.info {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #7a778d;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 21px 0;
+}
+.name {
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-weight: 900;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.position {
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-weight: 100;
+    font-size: 13px;
+    opacity: 0.7;
+    
+}

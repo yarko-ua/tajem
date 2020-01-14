@@ -1,0 +1,70 @@
+.contact {
+    width: 100%;
+    min-height:655px ;
+    color: #000;
+}
+
+.wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 70px 0;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        margin: 23px 0;
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    form {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-top: 35px;
+    }
+
+    input {
+        width: 460px;
+        height: 45px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        border: 1px solid #e5e5e5;
+        &:hover {
+            box-shadow: inset 0px 0px 7px 3px #ebebeb;
+            cursor: pointer;
+        }
+    }
+
+    textarea {
+        width: 460px;
+        height: 200px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        border: 1px solid #e5e5e5;
+        resize: none;
+        &:hover {
+            box-shadow: inset 0px 0px 10px 5px #ebebeb;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.client {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.svg {
+    margin: 23px 40px;
+}
